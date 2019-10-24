@@ -14,7 +14,7 @@ public class TestLoyaltyPage extends BasePage {
     @BeforeMethod
     public void testSetUp() {
         driver = new ChromeDriver();
-        driver.get("http://rucard.srv.lan/loyalty");
+        driver.get("http://rucard.ru/loyalty");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         basePage = new BasePage();
