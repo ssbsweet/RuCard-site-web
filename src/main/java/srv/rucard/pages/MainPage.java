@@ -168,7 +168,7 @@ public class MainPage extends PageObject {
 
     public void moreInfoButton() {
         this.moreInfoButton.click();
-        assertEquals(driver.getCurrentUrl(),"http://rucard.srv.lan/banks#");
+        assertEquals(driver.getCurrentUrl(),"http://www.rucard.ru/banks#");
     }
     public void downArrowButton() {
         this.downArrow.click();
@@ -177,11 +177,11 @@ public class MainPage extends PageObject {
     }
     public void banksButtonClick() {
         this.banksButton.click();
-        assertEquals(driver.getCurrentUrl(),"http://rucard.srv.lan/banks");
+        assertEquals(driver.getCurrentUrl(),"http://www.rucard.ru/banks");
     }
     public void companiesButtonClick() {
         this.companiesButton.click();
-        assertEquals(driver.getCurrentUrl(),"http://rucard.srv.lan/companies");
+        assertEquals(driver.getCurrentUrl(),"http://www.rucard.ru/companies");
     }
     public void consultationButtonClick() {
         this.consultationButton.click();
@@ -262,7 +262,7 @@ public class MainPage extends PageObject {
             this.moreAboutTechnology.click();
             basePage.switchTab();
             softAssert.assertEquals(driver.getCurrentUrl(), programButtonsUrls[i]);
-            driver.get("http://rucard.srv.lan/");
+            driver.get("http://www.rucard.ru/");
         }
         softAssert.assertAll();
     }
