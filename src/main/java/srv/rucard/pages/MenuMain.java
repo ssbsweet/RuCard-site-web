@@ -97,7 +97,7 @@ public class MenuMain extends PageObject {
     }
     public void goToTechSupport() {
         this.goToTechSupport.click();
-        assertEquals(driver.getCurrentUrl(), "http://rucard.srv.lan/contacts");
+        assertEquals(driver.getCurrentUrl(), "hhttp://www.rucard.ru/contacts");
     }
     public void goToserviceCentre() {
         this.goToserviceCentre.click();
@@ -116,7 +116,7 @@ public class MenuMain extends PageObject {
     }
     public void goToReporting() {
         this.goToReporting.click();
-        assertEquals(driver.getCurrentUrl(), "http://rucard.srv.lan/reports");
+        assertEquals(driver.getCurrentUrl(), "http://www.rucard.ru/reports");
     }
     public void goToSocialLiks() {
         WebElement[] socialButtons = new WebElement[] {
@@ -125,10 +125,10 @@ public class MenuMain extends PageObject {
                 this.goToInstagram,
                 this.goToOK};
         String[] socialLinks = new String[] {
-                "http://rucard.srv.lan/#",
-                "http://rucard.srv.lan/#",
-                "http://rucard.srv.lan/#",
-                "http://rucard.srv.lan/#"};
+                "http://www.rucard.ru/#",
+                "http://www.rucard.ru/#",
+                "http://www.rucard.ru/#",
+                "http://www.rucard.ru/#"};
         for (int i = 0; i < socialButtons.length; i++) {
             socialButtons[i].click();
             softAssert.assertEquals(driver.getCurrentUrl(), socialLinks[i]);
@@ -145,6 +145,6 @@ public class MenuMain extends PageObject {
     }
     public void goToAbout() {
         this.goToAboutPage.click();
-        assertEquals(driver.getCurrentUrl(), "http://rucard.srv.lan/about");
+        assertEquals(driver.getCurrentUrl(), "http://www.rucard.ru/about");
     }
 }
