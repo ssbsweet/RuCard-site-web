@@ -14,7 +14,7 @@ public class TestAboutPage extends BasePage {
     @BeforeMethod
     public void testSetUp() {
         driver = new ChromeDriver();
-        driver.get("http://rucard.srv.lan/about");
+        driver.get("http://rucard.ru/about");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         basePage = new BasePage();
