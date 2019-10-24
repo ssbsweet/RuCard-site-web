@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Прогон стейджа RuCard" verbose="2" >
+    <test name="Все страницы" >
+        <classes>
+            <class name="TestAboutPage" />
+            <class name="TestBanksPage" />
+            <class name="TestCoalitionPage" />
+            <class name="TestCompaniesPage" />
+            <class name="TestContactsPage" />
+            <class name="TestGiftCardPage" />
+            <class name="TestLoyaltyCardPage" />
+            <class name="TestLoyaltyPage" />
+            <class name="TestMainPage" />
+            <class name="TestMenuMain" />
+            <class name="TestVirtualCardPage" />
+        </classes>
+    </test>
+
+</suite>
