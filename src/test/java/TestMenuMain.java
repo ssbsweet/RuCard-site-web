@@ -15,7 +15,7 @@ public class TestMenuMain extends BasePage {
     @BeforeMethod
     public void testSetUp() throws InterruptedException {
         driver = new ChromeDriver();
-        driver.get("http://rucard.srv.lan/");
+        driver.get("http://rucard.ru/");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         basePage = new BasePage();
