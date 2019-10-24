@@ -115,7 +115,7 @@ public class BanksPage extends PageObject {
             programClick[i].click();
             basePage.switchTab();
             softAssert.assertEquals(driver.getCurrentUrl(), programButtonsUrls[i]);
-            driver.get("http://rucard.srv.lan/banks");
+            driver.get("http://www.rucard.ru/banks");
         }
         softAssert.assertAll();
     }
@@ -133,7 +133,7 @@ public class BanksPage extends PageObject {
         for (int i = 0; i < cardClick.length; i++) {
             cardClick[i].click();
             softAssert.assertEquals(driver.getCurrentUrl(), cardButtonsUrls[i], "!URL в адрессе отличается!");
-            driver.get("http://rucard.srv.lan/banks");
+            driver.get("http://www.rucard.ru/banks");
         }
         softAssert.assertAll();
     }
@@ -158,13 +158,13 @@ public class BanksPage extends PageObject {
             String etalonText = this.servicesRuKardText1.getText();
             paragraphClick[i].click();
             softAssert.assertNotEquals(this.servicesRuKardText1.getText(), etalonText, "!Тексты одинаковые!");
-            driver.get("http://rucard.srv.lan/banks");
+            driver.get("http://www.rucard.ru/banks");
         }
         for (int i = 0; i < mobileClick.length; i++) {
             String etalonText = this.servicesRuKardText1.getText();
             mobileClick[i].click();
             softAssert.assertNotEquals(this.mobilePaymentsText1.getText(), etalonText, "!Тексты одинаковые!");
-            driver.get("http://rucard.srv.lan/banks");
+            driver.get("http://www.rucard.ru/banks");
         }
         softAssert.assertNotEquals(this.getSelfServiceDevicesText1(), this.getSelfServiceDevicesText2(), "!Тексты одинаковые!");
         softAssert.assertAll();
