@@ -16,7 +16,7 @@ public class TestVirtualCardPage extends BasePage {
     @BeforeMethod
     public void testSetUp() {
         driver = new ChromeDriver();
-        driver.get("http://rucard.srv.lan/virtualcard");
+        driver.get("http://rucard.ru/virtualcard");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         basePage = new BasePage();
