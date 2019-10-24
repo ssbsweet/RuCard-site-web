@@ -14,7 +14,7 @@ public class TestCoalitionPage extends BasePage {
     @BeforeMethod
     public void testSetUp() {
         driver = new ChromeDriver();
-        driver.get("http://rucard.srv.lan/giftcard");
+        driver.get("http://rucard.ru/giftcard");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         basePage = new BasePage();
